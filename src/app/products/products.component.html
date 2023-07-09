@@ -1,0 +1,241 @@
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+	<h1 class="display-4">Pricing</h1>
+	<p class="lead">Medicine Package types</p>
+</div>
+<!-- <div class="container text-center">
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+				<div class="card-header">Premature Ejaculation</div>
+				<div class="card-body">
+					<h4 class="card-title">One Month Medicine</h4>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+				<div class="card-header">Header</div>
+				<div class="card-body">
+					<h4 class="card-title">Warning card title</h4>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+				<div class="card-header">Header</div>
+				<div class="card-body">
+					<h4 class="card-title">Info card title</h4>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+				<div class="card-header">Header</div>
+				<div class="card-body">
+					<h4 class="card-title">Primary card title</h4>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+						card's content.</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div> -->
+
+<div class="container">
+	<div class="card-deck mb-3 text-center">
+		<div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Premature Ejaculation</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">&#8377; 3100 <small class="text-muted">/ per package</small>
+				</h1>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>1 month medicine</li>
+					<li>to overcome</li>
+					<li>Premature Ejaculation (PE)</li>
+					<!-- <li>Help center access</li> -->
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary" 
+        (click)="onClick('Premature Ejaculation',3100)"
+        data-toggle="modal" data-target="#exampleModal">Buy now</button>
+			</div>
+		</div>
+		<div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Erectile Dysfunction</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">&#8377; 3250 <small class="text-muted">/ per package</small>
+				</h1>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>1 month medicine</li>
+					<li>to overcome</li>
+					<li>Erectile Dysfunction (ED)</li>
+					<!-- <li>Help center access</li> -->
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary"
+        (click)="onClick('Erectile Dysfunction',3250)"
+        data-toggle="modal" data-target="#exampleModal"
+        >Buy now</button>
+			</div>
+		</div>
+		<div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Sperm Enhancer</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">&#8377; 3850 <small class="text-muted">/ per package</small>
+				</h1>
+				<ul class="list-unstyled mt-3 mb-4">
+					<li>1 month medicine</li>
+					<li>to overcome</li>
+					<li>To Increase Sperm Count </li>
+					<!-- <li>Help center access</li> -->
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary" (click)="onClick('Sperm Enhancer',3850)"
+        data-toggle="modal" data-target="#exampleModal">Buy now</button>
+			</div>
+		</div>
+
+	</div>
+  <div class="card-deck mb-3 text-center">
+     <div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Infertility</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">&#8377; 4800 <small class="text-muted">/ per package</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+          <li>1 month medicine</li>
+					<li>to overcome</li>
+					<li>Infertility</li>
+					<li>in both Male & Female</li>
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary" (click)="onClick('Infertility',4800)"
+        data-toggle="modal" data-target="#exampleModal">Buy now</button>
+			</div>
+		</div>
+     <div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Complete Pro</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">&#8377; 7000 <small class="text-muted">/ per package</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+				  <li>1 month medicine</li>
+					<li>to overcome</li>
+					<li>Premature Ejaculation, Erectile Dysfunction, Infertility, Increase Libido & Sperm count  </li>
+					<!-- <li>Help center access</li> -->
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary" (click)="onClick('Complete Pro',7000)"
+        data-toggle="modal" data-target="#exampleModal">Buy now</button>
+			</div>
+		</div>
+  </div>
+ <div class="card-deck mb-3 text-center">
+     <div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">PCOD / PCOS</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">&#8377; 3500 <small class="text-muted">/ per package</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+          <li>1 month medicine</li>
+					<li>to overcome</li>
+					<li>PCOD / PCOS</li>
+					
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary" (click)="onClick('PCOD / PCOS',3500)"
+        data-toggle="modal" data-target="#exampleModal">Buy now</button>
+			</div>
+		</div>
+     <div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Pimples & Black marks</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">&#8377; 1200 <small class="text-muted">/ per package</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+				  <li>1 month medicine</li>
+					<li>to overcome</li>
+					<li>Pimples & Black marks</li>
+					<!-- <li>Help center access</li> -->
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary" (click)="onClick('Pimples & Black marks',1200)"
+        data-toggle="modal" data-target="#exampleModal">Buy now</button>
+			</div>
+		</div>
+    <div class="card mb-4 box-shadow">
+			<div class="card-header">
+				<h4 class="my-0 font-weight-normal">Fungal Infections</h4>
+			</div>
+			<div class="card-body">
+				<h1 class="card-title pricing-card-title">&#8377; 1800 <small class="text-muted">/ per package</small></h1>
+				<ul class="list-unstyled mt-3 mb-4">
+				  <li>1 month medicine</li>
+					<li>to overcome</li>
+					<li>Fungal Infections</li>
+					<!-- <li>Help center access</li> -->
+				</ul>
+				<button type="button" class="btn btn-lg btn-block btn-primary" (click)="onClick('Fungal Infections',1800)"
+        data-toggle="modal" data-target="#exampleModal">Buy now</button>
+			</div>
+		</div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{productName}}  <span class="badge badge-warning">&#8377; {{productAmount}}</span></h5>
+        <button type="button" #closebutton class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <form class="form-signin" [formGroup]="registerForm"  (ngSubmit)="onSubmit()">
+
+
+	<div class="form-group">
+		<label for="userName">Name</label>
+		<input type="text" id="userName" formControlName="userName" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.userName.errors }" #nameit>
+		<div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+			<div *ngIf="f.userName.errors.required">First Name is required</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="userPhone">Phone No</label>
+		<input type="text" id="userPhone" formControlName="userPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.userPhone.errors }" />
+		<div *ngIf="submitted && f.userPhone.errors" class="invalid-feedback">
+			<div *ngIf="f.userPhone.errors.required">Last Name is required</div>
+		</div>
+	</div>
+
+	<div class="form-check checkbox mb-3">
+				<label class="form-check-label">
+          <input type="checkbox" formControlName = "userInWhatsapp" class="form-check-input" value="Whatsapp"> Available in WhatApp
+        </label>
+			</div> 
+	<div class="form-group modal-footer">
+		<button class="btn btn-success" id="closeModal" >Confirm Order</button>
+	</div>
+</form>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+</div>

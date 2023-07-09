@@ -1,0 +1,38 @@
+<form class="form-signin" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+<div class="text-center" style="width:72px; height:72px;background-color:#033c73;border-radius:5px;margin: 0 auto;">
+		<i class="fa fa-user-md" aria-hidden="true" style="font-size: 72px;color:white"></i>
+	</div>
+	<!-- <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+	<h6 class="h3 mb-3 font-weight-normal text-center">Please fill in</h6>
+
+	<div class="form-group">
+		<label for="userName">Name</label>
+		<input type="text" id="userName" formControlName="userName" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.userName.errors }" #nameit>
+		<div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+			<div *ngIf="f.userName.errors.required">Name is required</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="userPhone">Phone No</label>
+		<input type="text" id="userPhone" formControlName="userPhone" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.userPhone.errors }" />
+		<div *ngIf="submitted && f.userPhone.errors" class="invalid-feedback">
+			<div *ngIf="f.userPhone.errors.required">Phone No. is required</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="userAppointmentDate">Appointment Date</label>
+		<input type="date" id="userAppointmentDate" formControlName="userAppointmentDate" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.userAppointmentDate.errors }" />
+		<div *ngIf="submitted && f.userAppointmentDate.errors" class="invalid-feedback">
+			<div *ngIf="f.userAppointmentDate.errors.required">Appointment Date is required</div>
+		</div>
+	</div>
+	<div class="form-check checkbox mb-3">
+				<label class="form-check-label">
+          <input type="checkbox" formControlName = "userInWhatsapp" class="form-check-input" value="Whatsapp"> Available in WhatApp
+        </label>
+			</div> 
+	<div class="form-group">
+		<button class="btn btn-primary">Get Appointment</button>
+	</div>
+</form>

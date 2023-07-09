@@ -1,0 +1,11 @@
+img {
+  border-radius: 50%;
+  border:3px solid #033c73;
+  width:100px;  height:100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-padding{
+  padding:20px;
+}
